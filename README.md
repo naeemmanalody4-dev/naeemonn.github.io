@@ -1,4 +1,4 @@
-naeemonn.github.io
+naeemonn.github.io[index.html](https://github.com/user-attachments/files/28679851/index.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,8 +200,8 @@ h1{
         rows="5"
         required></textarea>
 
-    <button type="submit">
-        Send 🚀
+<button type="submit">
+    Send 🚀
 <script>
 document.querySelector("form").addEventListener("submit", function(){
     setTimeout(() => {
