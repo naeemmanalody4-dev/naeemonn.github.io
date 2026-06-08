@@ -274,10 +274,7 @@ body {
 
     <h2>💀 Meme Of The Day</h2>
 
-    <div class="meme-box">
-        POV: You tell ChatGPT to make the text shorter
-        and suddenly become the smartest student in class.
-    </div>
+    <div class="meme-box" id="memeBox"></div>
 
 </section>
     <section class="section">
@@ -292,5 +289,18 @@ body {
 ...
 </script>
 
+    <script>
+const memes = [
+"POV: You opened Instagram for 5 minutes... 2 hours later 💀",
+"When the teacher says it's an easy test 😭",
+"Me fixing a bug after breaking 10 other things 😂",
+"POV: ChatGPT saved your homework again 🔥",
+"When WiFi disconnects during a game 😡"
+];
+
+document.getElementById("memeBox").textContent =
+memes[Math.floor(Math.random()*memes.length)];
+</script>
+    
 </body>
 </html>
