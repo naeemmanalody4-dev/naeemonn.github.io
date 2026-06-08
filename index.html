@@ -316,6 +316,15 @@ memes[Math.floor(Math.random()*memes.length)];
 </script>
 
     <button id="topBtn">⬆️</button>
+
+    <script>
+document.getElementById("topBtn").onclick = function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+</script>
     
 </body>
 </html>
