@@ -317,9 +317,6 @@ body {
     ⚠️ Warning: Side effects may include laughing at 3 AM.
 </div>
 
-<script>
-</script>
-
     <script>
 const memes = [
 "POV: You opened Instagram for 5 minutes... 2 hours later 💀",
@@ -343,19 +340,21 @@ document.getElementById("topBtn").onclick = function(){
     });
 }
 </script>
+
+    <script>
 const surprises = [
-"😂 Go send a meme to your best friend.",
-"💀 You opened Instagram for 5 minutes. Be honest.",
-"🔥 New reel coming soon.",
-"🤡 Touch grass challenge accepted?",
-"⚡ You're officially part of the Meme Hub."
+    "😂 Go send a meme to your best friend.",
+    "💀 You opened Instagram for 5 minutes. Be honest.",
+    "🔥 New reel coming soon.",
+    "🤡 Touch grass challenge accepted?",
+    "⚡ You're officially part of the Meme Hub."
 ];
 
 function surpriseMe(){
-document.getElementById("surpriseText").innerHTML =
-surprises[Math.floor(Math.random()*surprises.length)];
+    document.getElementById("surpriseText").innerHTML =
+    surprises[Math.floor(Math.random() * surprises.length)];
 }
 </script>
-    
+
 </body>
 </html>
