@@ -31,6 +31,10 @@ header{
     object-fit:cover;
     border:5px solid white;
     display:block;
+    transition:0.4s;
+    .profile:hover{
+    transform:scale(1.1) rotate(5deg);
+}
 }
 }
 }
@@ -71,7 +75,8 @@ h1{
 }
 
 .btn:hover{
-    transform:translateY(-3px);
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .section{
@@ -97,6 +102,11 @@ h1{
     padding:25px;
     border-radius:20px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
 }
 
 .card h3{
@@ -130,6 +140,8 @@ h1{
 
 </head>
 <body>
+
+<div class="loader"></div>
 
 <header>
 
