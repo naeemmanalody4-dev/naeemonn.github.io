@@ -190,6 +190,19 @@ h1{
 body {
     margin: 0;
 }
+@keyframes glow{
+    from{
+        box-shadow:0 0 10px white;
+    }
+    to{
+        box-shadow:0 0 30px white;
+    }
+}
+
+.profile{
+    animation:glow 2s infinite alternate;
+}
+    
 </style>
 </head>
 
