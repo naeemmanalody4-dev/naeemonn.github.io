@@ -281,9 +281,7 @@ body {
 
 </section>
 
-<div class="footer">
-    ⚠️ Warning: Side effects may include laughing at 3 AM.
-</div>
+<div class="meme-box" id="memeBox"></div>
 
 <script>
 document.querySelector("form").addEventListener("submit", function(){
@@ -293,5 +291,18 @@ document.querySelector("form").addEventListener("submit", function(){
 });
 </script>
 
+    <script>
+const memes = [
+"POV: You opened Instagram for 5 minutes... 2 hours later 💀",
+"When the teacher says it's an easy test 😭",
+"Me fixing a bug after breaking 10 other things 😂",
+"POV: ChatGPT saved your homework again 🔥",
+"When WiFi disconnects during a game 😡"
+];
+
+document.getElementById("memeBox").textContent =
+memes[Math.floor(Math.random()*memes.length)];
+</script>
+    
 </body>
 </html>
