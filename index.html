@@ -285,20 +285,6 @@ body {
 </section>
 
 <section class="section">
-
-    <section class="section">
-
-<h2>🎯 Follower Goal</h2>
-
-<div class="meme-box">
-    15,000 / 20,000 Followers
-
-    <br><br>
-
-    █████░░░░░ 25%
-</div>
-
-</section>
     
     <h2>💀 Meme Of The Day</h2>
 
@@ -306,8 +292,25 @@ body {
 
 </section>
     
-    <section class="section">
-        
+<section class="section">
+    
+  
+    <h2>🎲 Surprise Me</h2>
+
+    <div class="meme-box">
+
+        <p id="surpriseText">
+            Click the button 👇
+        </p>
+
+        <br>
+
+        <button class="btn" onclick="surpriseMe()">
+            🎲 Surprise Me
+        </button>
+
+    </div>
+    
 </section>
 
 <div class="footer">
@@ -338,6 +341,19 @@ document.getElementById("topBtn").onclick = function(){
         top:0,
         behavior:"smooth"
     });
+}
+</script>
+const surprises = [
+"😂 Go send a meme to your best friend.",
+"💀 You opened Instagram for 5 minutes. Be honest.",
+"🔥 New reel coming soon.",
+"🤡 Touch grass challenge accepted?",
+"⚡ You're officially part of the Meme Hub."
+];
+
+function surpriseMe(){
+document.getElementById("surpriseText").innerHTML =
+surprises[Math.floor(Math.random()*surprises.length)];
 }
 </script>
     
