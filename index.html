@@ -202,6 +202,20 @@ body {
 .profile{
     animation:glow 2s infinite alternate;
 }
+
+    #topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    background:#111;
+    color:#FFD60A;
+}
     
 </style>
 </head>
@@ -286,21 +300,22 @@ body {
 </div>
 
 <script>
-...
 </script>
 
     <script>
 const memes = [
 "POV: You opened Instagram for 5 minutes... 2 hours later 💀",
-"When the teacher says it's an easy test 😭",
-"Me fixing a bug after breaking 10 other things 😂",
+"POV: When the teacher says it's an easy test 😭",
+"POV: Me fixing a bug after breaking 10 other things 😂",
 "POV: ChatGPT saved your homework again 🔥",
-"When WiFi disconnects during a game 😡"
+"POV: When WiFi disconnects during a game 😡"
 ];
 
 document.getElementById("memeBox").textContent =
 memes[Math.floor(Math.random()*memes.length)];
 </script>
+
+    <button id="topBtn">⬆️</button>
     
 </body>
 </html>
