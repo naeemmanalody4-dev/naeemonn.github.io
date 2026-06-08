@@ -140,14 +140,25 @@ h1{
     
 .visitor-box{
     text-align:center;
-    margin-top:20px;
+    margin:20px auto;
     font-size:1.2rem;
     font-weight:bold;
     background:#111;
     color:#FFD60A;
-    display:inline-block;
+    display:block;
+    width:fit-content;
     padding:10px 20px;
     border-radius:50px;
+    cursor:pointer;
+
+    /* smooth animation */
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.visitor-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
     
 /* MOBILE RESPONSIVE */
